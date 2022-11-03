@@ -53,7 +53,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_DATASET_EXTRA_SIZE 33554368
 
 //Number of instructions in a RandomX program. Must be divisible by 8.
-#define RANDOMX_PROGRAM_SIZE     4480
+#define RANDOMX_PROGRAM_SIZE     14336
 
 //Number of iterations during VM execution.
 #define RANDOMX_PROGRAM_ITERATIONS 2048
