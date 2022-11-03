@@ -107,8 +107,8 @@ namespace randomx {
 		uint32_t imm32;
 	private:
 		void print(std::ostream&) const;
-		static const char* names[];
-		static InstructionFormatter engine[];
+		static const char* names[256];
+		static InstructionFormatter engine[256];
 		void genAddressReg(std::ostream& os, int) const;
 		void genAddressImm(std::ostream& os) const;
 		void genAddressRegDst(std::ostream&, int) const;
