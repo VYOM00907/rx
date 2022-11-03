@@ -66,7 +66,7 @@ namespace randomx {
 		void enableExecution();
 		void enableAll();
 	private:
-		static InstructionGeneratorX86 engine[256];
+		static InstructionGeneratorX86 engine[];
 		std::vector<int32_t> instructionOffsets;
 		int registerUsage[RegistersCount];
 		uint8_t* code;
