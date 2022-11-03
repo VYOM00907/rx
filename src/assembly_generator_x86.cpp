@@ -576,7 +576,7 @@ namespace randomx {
 #include "instruction_weights.hpp"
 #define INST_HANDLE(x) REPN(&AssemblyGeneratorX86::h_##x, WT(x))
 
-	InstructionGenerator AssemblyGeneratorX86::engine[] = {
+	InstructionGenerator AssemblyGeneratorX86::engine[256] = {
 		INST_HANDLE(IADD_RS)
 		INST_HANDLE(IADD_M)
 		INST_HANDLE(ISUB_R)
