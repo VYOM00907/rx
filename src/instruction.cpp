@@ -354,7 +354,7 @@ namespace randomx {
 		INST_NAME(NOP)
 	};
 
-	InstructionFormatter Instruction::engine[] = {
+	InstructionFormatter Instruction::engine[256] = {
 		INST_HANDLE(IADD_RS)
 		INST_HANDLE(IADD_M)
 		INST_HANDLE(ISUB_R)
