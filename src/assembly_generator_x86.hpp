@@ -87,7 +87,7 @@ namespace randomx {
 		void h_ISTORE(Instruction&, int);
 		void h_NOP(Instruction&, int);
 
-		static InstructionGenerator engine[];
+		static InstructionGenerator engine[256];
 		std::stringstream asmCode;
 		int registerUsage[RegistersCount];
 	};
