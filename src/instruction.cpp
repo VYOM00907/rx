@@ -321,7 +321,7 @@ namespace randomx {
 #define INST_NAME(x) REPN(#x, WT(x))
 #define INST_HANDLE(x) REPN(&Instruction::h_##x, WT(x))
 
-	const char* Instruction::names[] = {
+	const char* Instruction::names[256] = {
 		INST_NAME(IADD_RS)
 		INST_NAME(IADD_M)
 		INST_NAME(ISUB_R)
