@@ -56,7 +56,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_PROGRAM_SIZE       256
 
 //Number of iterations during VM execution.
-#define RANDOMX_PROGRAM_ITERATIONS 16384
+#define RANDOMX_PROGRAM_ITERATIONS 2048
 
 //Number of chained VM executions per hash.
 #define RANDOMX_PROGRAM_COUNT      2
