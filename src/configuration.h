@@ -59,7 +59,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_PROGRAM_ITERATIONS 16384
 
 //Number of chained VM executions per hash.
-#define RANDOMX_PROGRAM_COUNT      1
+#define RANDOMX_PROGRAM_COUNT      2
 
 //Scratchpad L3 size in bytes. Must be a power of 2.
 #define RANDOMX_SCRATCHPAD_L3      2097152
