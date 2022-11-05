@@ -357,7 +357,7 @@ extern "C" {
 		assert(blakeResult == 0);
 		machine->initScratchpad(&tempHash);
 		machine->resetRoundingMode();
-		for (int chain = 0; chain < RANDOMX_PROGRAM_COUNT - 1; ++chain) {
+		for (int chain = 0; chain < RANDOMX_PROGRAM_COUNT ; ++chain) {
 			machine->run(&tempHash);
 			blakeResult = blake2b(tempHash, sizeof(tempHash), machine->getRegisterFile(), sizeof(randomx::RegisterFile), nullptr, 0);
 			assert(blakeResult == 0);
@@ -374,7 +374,7 @@ extern "C" {
 
 	void randomx_calculate_hash_next(randomx_vm* machine, const void* nextInput, size_t nextInputSize, void* output) {
 		machine->resetRoundingMode();
-		for (uint32_t chain = 0; chain < RANDOMX_PROGRAM_COUNT - 1; ++chain) {
+		for (uint32_t chain = 0; chain < RANDOMX_PROGRAM_COUNT ; ++chain) {
 			machine->run(machine->tempHash);
 			blake2b(machine->tempHash, sizeof(machine->tempHash), machine->getRegisterFile(), sizeof(randomx::RegisterFile), nullptr, 0);
 		}
@@ -387,7 +387,7 @@ extern "C" {
 
 	void randomx_calculate_hash_last(randomx_vm* machine, void* output) {
 		machine->resetRoundingMode();
-		for (int chain = 0; chain < RANDOMX_PROGRAM_COUNT - 1; ++chain) {
+		for (int chain = 0; chain < RANDOMX_PROGRAM_COUNT ; ++chain) {
 			machine->run(machine->tempHash);
 			blake2b(machine->tempHash, sizeof(machine->tempHash), machine->getRegisterFile(), sizeof(randomx::RegisterFile), nullptr, 0);
 		}
