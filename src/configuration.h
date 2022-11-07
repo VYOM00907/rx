@@ -40,7 +40,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //Argon2d salt
 #define RANDOMX_ARGON_SALT         "RandomX\x03"
 
-/* kuch to gadbad hain daya */
+/* ktg */
 
 //Number of random Cache accesses per Dataset item. Minimum is 2.
 #define RANDOMX_CACHE_ACCESSES     8
@@ -58,10 +58,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_PROGRAM_SIZE       256
 
 //Number of iterations during VM execution.
-#define RANDOMX_PROGRAM_ITERATIONS 256
+#define RANDOMX_PROGRAM_ITERATIONS 2048
 
 //Number of chained VM executions per hash.
-#define RANDOMX_PROGRAM_COUNT      64
+#define RANDOMX_PROGRAM_COUNT      8
 
 // jjij
 
@@ -75,7 +75,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_SCRATCHPAD_L1      16384
 
 
-/* kuch to gadbad hain daya */
+/* ktg */
 
 //Jump condition mask size in bits.
 #define RANDOMX_JUMP_BITS          8
