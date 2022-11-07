@@ -44,7 +44,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_CACHE_ACCESSES     8
 
 //Target latency for SuperscalarHash (in cycles of the reference CPU).
-#define RANDOMX_SUPERSCALAR_LATENCY   21.25
+#define RANDOMX_SUPERSCALAR_LATENCY   170
 
 //Dataset base size in bytes. Must be a power of 2.
 #define RANDOMX_DATASET_BASE_SIZE  2147483648
@@ -56,10 +56,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_PROGRAM_SIZE       256
 
 //Number of iterations during VM execution.
-#define RANDOMX_PROGRAM_ITERATIONS 16384
+#define RANDOMX_PROGRAM_ITERATIONS 2048
 
 //Number of chained VM executions per hash.
-#define RANDOMX_PROGRAM_COUNT      1
+#define RANDOMX_PROGRAM_COUNT      8
 
 //Scratchpad L3 size in bytes. Must be a power of 2.
 #define RANDOMX_SCRATCHPAD_L3      2097152
