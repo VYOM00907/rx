@@ -43,7 +43,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /* ktg */
 
 //Number of random Cache accesses per Dataset item. Minimum is 2.
-#define RANDOMX_CACHE_ACCESSES     4
+#define RANDOMX_CACHE_ACCESSES     16
 
 //Target latency for SuperscalarHash (in cycles of the reference CPU).
 #define RANDOMX_SUPERSCALAR_LATENCY   85
@@ -58,7 +58,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_PROGRAM_SIZE       128
 
 //Number of iterations during VM execution.
-#define RANDOMX_PROGRAM_ITERATIONS 1048
+#define RANDOMX_PROGRAM_ITERATIONS 4096
 
 //Number of chained VM executions per hash.
 #define RANDOMX_PROGRAM_COUNT      4
