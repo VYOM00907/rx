@@ -43,10 +43,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /* ktg */
 
 //Number of random Cache accesses per Dataset item. Minimum is 2.
-#define RANDOMX_CACHE_ACCESSES     8
+#define RANDOMX_CACHE_ACCESSES     4
 
 //Target latency for SuperscalarHash (in cycles of the reference CPU).
-#define RANDOMX_SUPERSCALAR_LATENCY   170
+#define RANDOMX_SUPERSCALAR_LATENCY   85
 
 //Dataset base size in bytes. Must be a power of 2.
 #define RANDOMX_DATASET_BASE_SIZE  2147483648
@@ -55,24 +55,24 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_DATASET_EXTRA_SIZE 33554368
 
 //Number of instructions in a RandomX program. Must be divisible by 8.
-#define RANDOMX_PROGRAM_SIZE       16384
+#define RANDOMX_PROGRAM_SIZE       128
 
 //Number of iterations during VM execution.
-#define RANDOMX_PROGRAM_ITERATIONS 2048
+#define RANDOMX_PROGRAM_ITERATIONS 1048
 
 //Number of chained VM executions per hash.
-#define RANDOMX_PROGRAM_COUNT      8
+#define RANDOMX_PROGRAM_COUNT      4
 
 // jjij
 
 //Scratchpad L3 size in bytes. Must be a power of 2.
-#define RANDOMX_SCRATCHPAD_L3      2097152
+#define RANDOMX_SCRATCHPAD_L3      1048576
 
 //Scratchpad L2 size in bytes. Must be a power of two and less than or equal to RANDOMX_SCRATCHPAD_L3.
-#define RANDOMX_SCRATCHPAD_L2      262144
+#define RANDOMX_SCRATCHPAD_L2      131072
 
 //Scratchpad L1 size in bytes. Must be a power of two (minimum 64) and less than or equal to RANDOMX_SCRATCHPAD_L2.
-#define RANDOMX_SCRATCHPAD_L1      16384
+#define RANDOMX_SCRATCHPAD_L1      8192
 
 
 /* ktg */
